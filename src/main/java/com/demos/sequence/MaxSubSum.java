@@ -2,8 +2,8 @@ package com.demos.sequence;
 
 public class MaxSubSum {
     public static void main(String[] args) {
-        int[] seq = {-2, 11, -4, 13, -5, -2};
-        System.out.println("max seq sum is: " + maxSubSum4(seq));
+        int[] seq = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        System.out.println("max seq sum is: " + maxSubSum3(seq));
     }
 
     // 第一种：穷举法得到最大子序列和,运行时间为O(n*n*n)
@@ -107,8 +107,7 @@ public class MaxSubSum {
 
             if (thisSum > maxSum) {
                 maxSum = thisSum;
-            }
-            else if (thisSum < 0) {
+            } else if (thisSum < 0) {
                 thisSum = 0;
             }
         }

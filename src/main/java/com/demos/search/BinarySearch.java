@@ -13,6 +13,8 @@ public class BinarySearch {
 
         while (low <= high) {
             int mid = (low + high) / 2;
+            int mid2 = low + (high - low) / 2;
+            System.out.println("mid1=" + mid + " mid2=" + mid2);
 
             if (arr[mid] > targetNum) {
                 high = mid - 1;
